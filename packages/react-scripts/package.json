@@ -1,6 +1,6 @@
 {
   "name": "@mtpetros/react-scripts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Configuration and scripts for Create React App. Modified to allow aliasing",
   "repository": "mtpetros/create-react-app",
   "license": "MIT",
