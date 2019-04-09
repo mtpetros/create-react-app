@@ -27,7 +27,7 @@ const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeM
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
 const paths = require('./paths');
-const aliases = require('./aliases');
+const aliases = require(paths.aliases);
 const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
@@ -57,7 +57,7 @@ const sassModuleRegex = /\.module\.(scss|sass)$/;
 // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
 const defaultAliases = { 'react-native': 'react-native-web' };
 const userAliases = aliases || {};
-const combinedAliases = Object.assign({}, defaultAliases, userAliases)
+const combinedAliases = Object.assign({}, defaultAliases, userAliases);
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
